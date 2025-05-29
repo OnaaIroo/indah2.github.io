@@ -1,0 +1,240 @@
+<html lang="en">  
+ <head>  
+  <meta charset="utf-8"/>  
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>  
+  <title>  
+   Mark Lee The First Fruit  
+  </title>  
+  <script src="https://cdn.tailwindcss.com">  
+  </script>  
+  <script src="script.js"></script>  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>  
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&amp;display=swap" rel="stylesheet"/>  
+ </head>  
+ <style>  
+  /* Navbar fixed */  
+  header {  
+    position: fixed;  
+    top: 0;  
+    width: 100%;  
+    background-color: #121212;  
+    z-index: 50;  
+    border-bottom: 1px solid #2d2d2d;  
+  }  /* Padding atas supaya konten gak ketutupan navbar */
+main {
+padding-top: 90px;
+}
+
+/* Animasi saat klik gambar */
+.clickable-img {
+transition: transform 0.3s ease;
+cursor: pointer;
+}
+
+.clickable-img:active {
+transform: scale(0.95);
+}
+</style>
+
+<body class="bg-[#121212] text-white font-[Montserrat]">  
+  <header class="flex justify-between items-center px-4 py-3 max-w-7xl mx-auto">  <!-- Logo -->  
+<div class="flex items-center">  
+  <img   
+    alt="On your mark logo"   
+    class="w-20 h-auto"   
+    height="40"   
+    src="images/logo.png"   
+    width="80"   
+  />  
+</div>  
+
+<!-- Navbar -->  
+<nav class="space-x-6 text-xs sm:text-sm font-semibold tracking-widest">  
+  <a class="hover:text-gray-400" href="#home">HOME</a>  
+  <a class="hover:text-gray-400" href="#album">ABOUT US</a>  
+  <a class="hover:text-gray-400" href="#ticket">TICKETING</a>  
+</nav>
+
+  </header>  
+  <!-- end of navbar-->  
+  
+  <!--home-->    
+  <main class="max-w-7xl mx-auto px-4">  
+  <section id="home" class="relative mt-6 text-center scroll-mt-24">  
+  <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">  
+    MARK LEE  
+  </h1>  
+  <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mt-2">  
+    THE FIRST FRUIT  
+  </h2>    <div class="relative inline-block">  
+    <img alt="Mark Lee" src="images/bg.png" class="w-full max-w-2xl h-auto object-contain mx-auto" />  
+    <a href="#ticket" class="absolute bottom-20 left-1/2 -translate-x-1/2 py-3 px-6 text-sm border border-gray-400 rounded bg-black/60 hover:bg-gray-700 text-white text-center">  
+  Get The Ticket Now!</a>  
+  </div>  
+</section>  
+</main>  <!-- Album Info Section -->  
+<section id="album" class="mt-20 px-4 sm:px-6 lg:px-8 scroll-mt-24">  
+  <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between  sm:space-x-8">  
+    <img   
+      src="images/album.jpg"   
+      alt="album"   
+      class="w-50 h-50 rounded-lg mb-8 sm:mb-0 shrink-0 ml-8 mr-8 clickable-img"  
+      width="180"   
+      height="180"  
+    />  <div class="text-center sm:text-left">  
+  <h3 class="text-3xl ml-8 mr-8 font-extrabold mb-2">
+    THE FIRST FRUIT ALBUM  
+  </h3>  
+  <p class="text-gray-400 text-xs sm:text-sm leading-relaxed ml-8 mr-8">  
+    Through every lyric and every note, MARK LEE unveils a journey of raw yet beautiful emotions: the search for identity, the quiet battles within, and the small victories that feel monumental. Each track is a piece of a mosaic, coming together to paint a portrait of someone unafraid to be honest. This isn’t just music—it’s memory, courage, and hope wrapped in harmony. A creation that lingers long after the final note fades.  
+  </p>  
+</div>
+
+  </div>  
+</section>  <!-- Album Covers Grid -->  <section class="mt-12 px-4 sm:px-6 lg:px-8">  
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl mx-auto text-center">  
+    <div>  
+      <img src="images/album1.jpg" alt="+82 Pressing album" class="w-28 h-32 rounded-lg mx-auto clickable-img"  
+        width="120"   
+        height="140"  
+      />  
+      <p class="mt-2 text-xs sm:text-sm">  
+        +82 Pressing  
+      </p>  
+    </div>  <div>  
+  <img src="images/album2.jpg" alt="1999 album" class="w-28 h-32 rounded-lg mx-auto clickable-img"  
+    width="120"   
+    height="140"  
+  />  
+  <p class="mt-2 text-xs sm:text-sm">  
+    1999  
+  </p>  
+</div>  
+  
+<div>  
+  <img src="images/album3.jpg" alt="CHILD album" class="w-28 h-32 rounded-lg mx-auto clickable-img"  
+    width="120"   
+    height="140"  
+  />  
+  <p class="mt-2 text-xs sm:text-sm">  
+    CHILD  
+  </p>  
+</div>  
+  
+<div>  
+<img src="images/album4.jpg" alt="200 album" class="w-28 h-32 rounded-lg mx-auto clickable-img"   
+    width="120"   
+    height="140"  
+  />  
+  <p class="mt-2 text-xs sm:text-sm">  
+    200  
+  </p>  
+</div>
+
+  </div>  
+</section>  
+
+<!--Ticketing-->
+<section id="ticket" class=" scroll-mt-24 mt-20 text-center">  
+  <h3 class="text-3xl sm:text-3xl font-extrabold mb-6">  
+    GET YOUR TICKET NOW!  
+  </h3>  
+  <img alt="Seating" class="mx-auto max-w-full h-auto rounded-lg" height="220" src="images/ticket.png" width="600" />  
+</section>  <section class="mt-8 max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs sm:text-sm">    <div class="ticket-card bg-[#222222] rounded-lg p-4 flex justify-between items-center" data-price="1000">  
+    <div>  
+      <p class="font-bold">LEVEL 1</p>  
+      <div class="flex items-center space-x-2 mt-1">  
+        <button class="decrement px-2 py-1 bg-gray-700 text-white rounded">-</button>  
+        <span class="ticket-count">01</span>  
+        <button class="increment px-2 py-1 bg-gray-700 text-white rounded">+</button>  
+      </div>  
+    </div>  
+    <div class="text-right">  
+      <p class="font-bold total-price">$1,000</p>  
+      <button class="mt-1 px-3 py-1 border border-gray-400 rounded text-xs hover:bg-gray-700">  
+        BUY  
+      </button>  
+    </div>  
+  </div>    <div class="ticket-card bg-[#222222] rounded-lg p-4 flex justify-between items-center" data-price="900">  
+    <div>  
+      <p class="font-bold">LEVEL 2</p>  
+      <div class="flex items-center space-x-2 mt-1">  
+        <button class="decrement px-2 py-1 bg-gray-700 text-white rounded">-</button>  
+        <span class="ticket-count">01</span>  
+        <button class="increment px-2 py-1 bg-gray-700 text-white rounded">+</button>  
+      </div>  
+    </div>  
+    <div class="text-right">  
+      <p class="font-bold total-price">$900</p>  
+      <button class="mt-1 px-3 py-1 border border-gray-400 rounded text-xs hover:bg-gray-700">  
+        BUY  
+      </button>  
+    </div>  
+  </div>    <div class="ticket-card bg-[#222222] rounded-lg p-4 flex justify-between items-center" data-price="800">  
+    <div>  
+      <p class="font-bold">LEVEL 3</p>  
+      <div class="flex items-center space-x-2 mt-1">  
+        <button class="decrement px-2 py-1 bg-gray-700 text-white rounded">-</button>  
+        <span class="ticket-count">01</span>  
+        <button class="increment px-2 py-1 bg-gray-700 text-white rounded">+</button>  
+      </div>  
+    </div>  
+    <div class="text-right">  
+      <p class="font-bold total-price">$800</p>  
+      <button class="mt-1 px-3 py-1 border border-gray-400 rounded text-xs hover:bg-gray-700">  
+        BUY  
+      </button>  
+    </div>  
+  </div>    <div class="ticket-card bg-[#222222] rounded-lg p-4 flex justify-between items-center" data-price="700">  
+    <div>  
+      <p class="font-bold">LEVEL 4</p>  
+      <div class="flex items-center space-x-2 mt-1">  
+        <button class="decrement px-2 py-1 bg-gray-700 text-white rounded">-</button>  
+        <span class="ticket-count">01</span>  
+        <button class="increment px-2 py-1 bg-gray-700 text-white rounded">+</button>  
+      </div>  
+    </div>  
+    <div class="text-right">  
+      <p class="font-bold total-price">$700</p>  
+      <button class="mt-1 px-3 py-1 border border-gray-400 rounded text-xs hover:bg-gray-700">  
+        BUY  
+      </button>  
+    </div>  
+  </div>  
+</section>  
+  </main>    
+  
+  <!--Footer-->
+  <footer class="mt-20 max-w-7xl mx-auto px-4 py-6 text-xs text-gray-400 font-semibold tracking-widest ml-8 mr-8">    <!-- Grid Menu -->    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl w-full mb-6">  
+    <div>  
+      <p class="text-white font-bold mb-1">OVERVIEW</p>  
+      <p class="opacity-50">INTRODUCTION</p>  
+      <p class="opacity-50">STRATEGY</p>  
+      <p class="opacity-50">HISTORY</p>  
+      <p class="opacity-50">BUSSINESS AREA</p>  
+    </div>  
+    <div>  
+      <p class="text-white font-bold mb-1">SPOTLIGHT</p>  
+      <p class="opacity-50">PRESS</p>  
+      <p class="opacity-50">CAREERS</p>  
+      <p class="opacity-50">INSIDE RV</p>  
+    </div>  
+    <div>  
+      <p class="text-white font-bold mb-1">BUSSINESS</p>  
+      <p class="opacity-50">MUSIC</p>  
+      <p class="opacity-50">MANAGEMENT</p>  
+      <p class="opacity-50">ARTIST</p>  
+    </div>  
+    <div>  
+      <p class="text-white font-bold mb-1">SOCIAL MEDIA</p>  
+      <p class="opacity-50">INSTAGRAM</p>  
+      <p class="opacity-50">YOUTUBE</p>  
+    </div>  
+  </div>    <!-- Logo + Info di bawah -->    <div class="flex flex-col sm:flex-row items-center justify-between w-full sm:space-y-0  text-white text-[10px] font-bold">  
+    <p>THE FIRST FRUIT ALL RIGHT RESERVED</p>  
+    <img src="images/logo.png" alt="On your mark logo" class="w-14 h-auto" />  
+    <p>POWERED BY SM ENTERTAINMENT 2025</p>  
+  </div>  
+</footer>  
+ </body>  
+</html>  

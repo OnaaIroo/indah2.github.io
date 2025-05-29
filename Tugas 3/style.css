@@ -1,0 +1,77 @@
+.hero {
+    background: url('images/home.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: 100vh; /* Full tinggi layar */
+    display: flex;
+    align-items: center; /* Agar teks di tengah */
+    justify-content: center; /* Posisikan kontennya di tengah */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Agar posisinya tetap rapi */
+}
+
+#about img {
+    max-height: 300px; /* Sesuaikan ukuran */
+    width: 100%;
+    object-fit: cover;
+  }
+  .dropdown-menu {
+    background-color: var(--bs-primary); /* Warna biru Bootstrap */
+    border: none;
+}
+.dropdown-item{
+    color: white;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Memberi jarak antara teks dan ikon ">" */
+    align-items: center; /* Membuat teks dan ikon sejajar secara vertikal */
+}
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/*artikel*/
+.artikel-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .artikel-scroll::-webkit-scrollbar-thumb {
+    background-color: #198754;
+    border-radius: 10px;
+  }
+
+  .artikel-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .card-img-top {
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover .card-img-top {
+    transform: scale(1.1);
+  }
+
+/* Efek hover */
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.card-img-top {
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  footer {
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+  }
+
+  footer a:hover {
+    color: #5ea96e !important;
+  }
